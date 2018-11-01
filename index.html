@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="ICon/iconfont.css">
+</head>
+<body>
+   <div class="wrap">
+       <div class="nav">
+           <p><</p>
+           <p>无连接</p>
+           <p> <i class="icon iconfont icon-xitongcaidan"></i></p>
+       </div>
+       <div class="top2">
+           <p><i class="icon iconfont icon-radiobutton"></i></p>
+           <p><i class="icon iconfont icon-shouye"></i></p>
+           <p><i class="icon iconfont icon-xitongcaidan"></i></p>
+           <p><i class="icon iconfont icon-pinglun"></i></p>
+       </div>
+       <div>
+            <div class="content">
+                <p>滑动控制上下左右，点击确定</p>
+                <p>长按调节电视音量</p>
+            </div>
+            <div class="content">1</div>
+            <div class="content">2</div>
+            <div class="content">3</div>
+       </div>
+       
+
+       <div class="di">
+        <p><i class="icon iconfont icon-zonghe"></i></p>
+        <p class="two"><i class="icon iconfont icon-fanhui"></i></p>
+       </div>
+   </div> 
+<script src='jquery.min.js'></script>
+
+<script>
+    $('.top2 p').on("click",function(){
+        let index = $(this).index();
+        $('.content').eq(index).show().siblings().hide();
+    })
+</script>
+</body>
+</html>
